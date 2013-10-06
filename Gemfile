@@ -46,3 +46,5 @@ gem 'bcrypt-ruby', '~> 3.0.1'
 # gem 'debugger', group: [:development, :test]
 
 gem 'pry'
+
+gem 'rails_12factor', group: :production
