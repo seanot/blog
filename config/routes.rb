@@ -1,6 +1,11 @@
 Blog::Application.routes.draw do
 
-  get "welcome/index"
+  get 'signup', to: 'users#new',        as: 'signup'
+  get 'login',  to: 'sessions#new',     as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+
+  # get "sessions/new"
+  # get "welcome/index"
   resources :posts, path: '/posts'
   
   resources :posts do
@@ -8,7 +13,7 @@ Blog::Application.routes.draw do
   end
 
   resources :users
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :sessions
 
   
   # The priority is based upon order of creation: first created -> highest priority.
