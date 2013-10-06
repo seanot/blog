@@ -1,3 +1,5 @@
 Blog -- phase 3 intro
 
 running on rails 4.0.0
+
+Heroku address is: http://nameless-lowlands-5804.herokuapp.com/
